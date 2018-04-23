@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 10%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 17px 0;
+}
+
+header img {
+    width: 100%;
+}
+
+[alt="logoUM"] {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+[alt="logoUMv"] {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 10%;
+}
+
+#inicio {
+    background: url(../images/fondo.jpg) no-repeat center top #3B3A8B;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative; 
+}
+
+#inicio::after{
+    content: " ";
+    border-style: solid;
+    border-width: 0 0 2.5rem 100vw;
+    border-color: transparent white white transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#inicio h1 {
+    font-weight: 600;
+    margin-top: 50%;
+    display: inline-block;
+}
+
+#inicio h2 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#inicio button {
+    font-weight: 400;
+    color: white;
+    background-image: linear-gradient(to bottom, #4F95E6, #6193E8);
+    border-radius: 3px;
+    border: 0;
+    padding: 7px 2em;
+    margin: 1em auto 4em;
+    box-shadow: 4px 8px 20px black;  
+}
+
+
+#descripcion {
+    text-align: center;
+    color: #0F2367;
+}
+
+#descripcion h2 {
+    font-weight: 600;
+    margin: 40px auto;
+}
+
+#descripcion p {
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0 15px;
+}
+
+#perfil h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: #0F2367;
+    font-weight: 600;
+    margin: 40px auto;
+}
+#perfil h3 {
+    text-align: center;
+    color: #0F2367;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#perfil .iconos{
+    align-content: center;
+    width: 80%;
+    
+}
+#competencias {
+    text-align: center;
+    color: #0F2367;   
+}
+#competencias img{
+    width: 95%
+}
+#competencias h3{
+    font-weight: 300;
+}
+#beneficios{
+    background: url(../images/beneficios-fondo.jpg) no-repeat center top #3B3A8B;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
