@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 body {
     font-family: 'Montserrat', sans-serif;
@@ -27,6 +26,7 @@ header img {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-top: 10%;
+    justify-self: end;
 }
 
 #inicio {
@@ -150,7 +150,7 @@ header img {
     text-align: center;
     color: #0F2367;
     margin-bottom: 40px;
-    
+
 }
 
 #competencias h2 {
@@ -210,7 +210,8 @@ header img {
     width: 20%;
     margin: 50px auto 0;
 }
-#beneficios h3{
+
+#beneficios h3 {
     font-weight: 300;
 }
 
@@ -256,13 +257,15 @@ footer img {
     width: 40%;
     margin-bottom: 1.5rem;
 }
-footer a{
+
+footer a {
     text-align: center;
 }
 
+
 /* Tablet */
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
 
     header img {
         width: 70%;
@@ -276,7 +279,10 @@ footer a{
     #inicio h2 {
         font-size: 25px;
     }
-    #inicio button {}
+    #inicio button {
+        padding: 8px 2em;
+        font-size: 18px;
+    }
     #descripcion h2 {
         font-size: 25px;
         text-align: center;
@@ -286,7 +292,7 @@ footer a{
         grid-template-columns: 24% 24% 24% 24%;
         grid-template-rows: 10% 90%;
         grid-column-gap: 1%;
-    
+
     }
     #perfil h2 {
         grid-column-start: 1;
@@ -296,14 +302,14 @@ footer a{
         font-size: 25px;
         text-align: center;
     }
-    #perfil img{
+    #perfil img {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-gap: 3;
     }
 
-   
+
     #competencias {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -322,7 +328,7 @@ footer a{
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 10% 90%;
     }
-    #beneficios h2{
+    #beneficios h2 {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -341,9 +347,59 @@ footer a{
     footer h2 {
         font-size: 35px;
     }
-    footer button {}
+    footer button {
+        padding: 8px 2em;
+        font-size: 18px;
+    }
     footer img {
         width: 15%;
 
     }
-}
+    /* Desktop */
+    @media screen and (min-width:1024px) {
+        header img {
+            width: 40%;
+        }
+        [alt="logoUMv"] {
+            margin-top: 4%;
+        }
+        #inicio h1 {
+            font-size: 70px;
+            margin-top: 35%;
+        }
+        #inicio h2 {
+            font-size: 35px;
+        }
+        #inicio button {
+            padding: 10px 4em;
+            font-size: 20px;
+        }
+        #descripcion h2 {
+            font-size: 30px;
+        }
+        #descripcion p {
+            font-size: 25px;
+        }
+        #perfil h2 {
+            font-size: 30px;
+        }
+        #competencias h2 {
+            font-size: 30px;
+        }
+        #beneficios {
+            padding: 120px 0;
+        }
+        #beneficios h2 {
+            font-size: 30px;
+        }
+        footer h2 {
+            font-size: 40px;
+        }
+        footer button {
+            padding: 10px 4em;
+            font-size: 20px;
+        }
+        footer img {
+            width: 10%;
+        }
+    }

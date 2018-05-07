@@ -7,9 +7,10 @@
     <title>Licenciatura en Contaduría Pública</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/iziModal.min.css">
 </head>
 
-<body>
+<body id="modal">
     <header>
         <img src="images/umlogo.svg" alt="logoUM">
         <img src="images/umvlogo.svg" alt="logoUMv">
@@ -17,7 +18,7 @@
     <section id="inicio">
         <h1>Licenciatura en Contaduría Pública</h1>
         <h2>Calidad educativa ajustada tu tiempo</h2>
-        <button>Obtener Información</button>
+        <button class="trigger-custom" data-izimodal-open="#modal-custom">Obtener Información</button>
     </section>
     <section id="descripcion">
         <h2>Descripcíon General</h2>
@@ -43,7 +44,7 @@
             <h3>Bienestar Social</h3>
         </div>
     </section>
-    
+
     <section id="competencias">
         <h2>Competencias Disciplinarias</h2>
         <div class="competencias">
@@ -77,10 +78,32 @@
     </section>
     <footer>
         <h2>¡No pierdas esta oportunidad!</h2>
-        <button>Obtener Información</button>
+        <button class="trigger-custom" data-izimodal-open="#modal-custom">Obtener Información</button>
         <a href="https://www.facebook.com/umvirtual/"><img src="images/facebook.svg" alt="facebook"></a>
         <a href="https://twitter.com/umvirtual"><img src="images/twitter.svg" alt="twitter"></a>
         <a href="https://www.instagram.com/umvirtual/"><img src="images/instagram.svg" alt="instagram"></a>
     </footer>
+
+    <button class="trigger-custom" data-izimodal-open="#modal-custom"></button>
+
+    <div id="modal-custom" data-iziModal-group="grupo1">
+
+        <button data-iziModal-close class="icon-close">x</button>
+        
+        <section class="esconder">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="text" placeholder="E-mail">
+            <input type="telefono" placeholder="Teléfono">
+
+            <footer>
+                <button class="enviar">Enviar</button>
+            </footer>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/iziModal.min.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
+
 </html>
