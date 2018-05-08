@@ -262,6 +262,76 @@ footer a {
     text-align: center;
 }
 
+#esconder {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    background-color: blueviolet;
+
+}
+
+#modal-custom > div > div {
+    position: relative;
+    padding-top: 25px!important;
+}
+
+#modal-custom > div > div > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+}
+
+.iziModal {
+    background: transparent;
+    
+
+}
+
+#modal-custom > div > div > section > input {
+    height: 50px;
+    background-color: #DFE9F7;
+    border: 0;  
+    
+}
+#modal-custom{
+    box-shadow: none;
+}
+
+[placeholder="Nombre"] {
+    width: 47%;
+    margin-left: 6px;
+    
+
+
+}
+
+[placeholder="Apellido"] {
+    width: 47%;
+    margin-left: 6px;
+    
+}
+
+[placeholder="E-mail"] {
+    width: 97%;
+    margin-left: 6px;
+    margin-top: 10px;
+
+}
+
+[placeholder="Teléfono"] {
+    width: 97%;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+#modal-custom > div > div > section > footer{
+    background-color: transparent;
+    
+}
 
 /* Tablet */
 
@@ -355,6 +425,11 @@ footer a {
         width: 15%;
 
     }
+    [placeholder="Apellido"] {
+    width: 48.3%;
+    margin-left: 6px;
+    
+}
     /* Desktop */
     @media screen and (min-width:1024px) {
         header img {
@@ -402,4 +477,5 @@ footer a {
         footer img {
             width: 10%;
         }
+
     }
