@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 10%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 17px 0;
+}
+
+header img {
+    width: 100%;
+}
+
+[alt="logoUM"] {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+[alt="logoUMv"] {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 10%;
+    justify-self: end;
+}
+
+#gracias {
+    background: url(../images/fondo.jpg) no-repeat center top #3B3A8B;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+#gracias::after {
+    content: " ";
+    border-style: solid;
+    border-width: 0 0 2.5rem 100vw;
+    border-color: transparent #0F2367 #0F2367 transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#gracias h1 {
+    font-weight: 600;
+    margin-top: 50%;
+    display: inline-block;
+}
+
+#gracias h2 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#gracias button {
+    font-weight: 400;
+    color: white;
+    background-image: linear-gradient(to bottom, #4F95E6, #6193E8);
+    border-radius: 3px;
+    border: 0;
+    padding: 7px 2em;
+    margin: 1em auto 4em;
+    box-shadow: 4px 8px 20px black;
+}
+footer {
+    background-color: #0F2367;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 40% 40%;
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+    margin: .5em auto 0;
+    margin-bottom: 1.5em;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+footer button {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-weight: 400;
+    color: white;
+    background-image: linear-gradient(to bottom, #4F95E6, #6193E8);
+    border-radius: 3px;
+    border: 0;
+    padding: 7px 2em;
+    margin: 1em auto 2em;
+    box-shadow: 4px 8px 20px black;
+}
+
+footer img {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-start: 4;
+    width: 40%;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    text-align: center;
+}
+/* Tablet */
+
+@media screen and (min-width:768px) {
+
+    header img {
+        width: 70%;
+    }
+    [alt="logoUMv"] {
+        margin-top: 7%
+    }
+    #gracias h1 {
+        font-size: 50px;
+    }
+    #gracias h2 {
+        font-size: 25px;
+    }
+    #gracias button {
+        padding: 8px 2em;
+        font-size: 18px;
+    }
+    footer h2 {
+        font-size: 35px;
+    }
+    footer button {
+        padding: 8px 2em;
+        font-size: 18px;
+    }
+    footer img {
+        width: 15%;
+
+    }
+    /* Desktop */
+    @media screen and (min-width:1024px) {
+        header img {
+            width: 40%;
+        }
+        [alt="logoUMv"] {
+            margin-top: 4%;
+        }
+        #gracias h1 {
+            font-size: 70px;
+            margin-top: 35%;
+        }
+        #gracias h2 {
+            font-size: 35px;
+        }
+        #gracias button {
+            padding: 10px 4em;
+            font-size: 20px;
+        }
+         footer h2 {
+            font-size: 40px;
+        }
+        footer button {
+            padding: 10px 4em;
+            font-size: 20px;
+        }
+        footer img {
+            width: 10%;
+        }
+
+    }
